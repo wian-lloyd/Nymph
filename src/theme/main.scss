@@ -1,0 +1,70 @@
+@import "_variables";
+@import "_queries";
+@import "_animations";
+@import "_components";
+
+/* ////////////////////
+   TABLE OF CONTENT
+
+   0. variables - see ./variables.scss
+   0. queries - see ./queries.scss
+   0. animations - see ./animations.scss
+   0. components - see ./components.scss
+
+   1. global
+      1.1 normalization
+
+//////////////////// */
+
+
+/* ====================
+	1. global
+   ====================*/
+
+   /* -------------------- 1.1 normalization -------------------- */
+   
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      } // default clears
+
+      html {
+         background-color: $color-background;
+         color: $text-main-contrast;
+         font-family: $font-primary;
+         font-weight: 300;
+         font-size: 20px;
+         text-rendering: optimizeLegibility;
+      } // base settings
+
+      .row {
+         max-width: 1140px;
+         margin: 0 auto;
+      } // initial setup for fluid grid
+
+      ::selection {
+         background: $color-secondary; /* WebKit/Blink Browsers */
+      }
+      ::-moz-selection {
+         background: $color-secondary; /* Gecko Browsers */
+      } // change the text selection color
+
+      :focus {
+         outline: none;
+         // box-shadow: 0px 0px 2px 1px $color-secondary;
+         // outline-style: dotted;
+         // outline-color: $color-secondary;
+         // outline-width: thin;
+      } // change the focus selection color
+
+      .hidden {
+         display: none !important;
+      }
+
+      .scroll-lock {
+         height: 100%;
+         overflow: hidden;
+      } // disable scrolling when applied to the body
+
+  /* -------------------- ----------------- -------------------- */

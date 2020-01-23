@@ -1,0 +1,92 @@
+/* ////////////////////
+	TABLE OF CONTENT
+
+	0. variables
+        0.1 colors
+        0.2 fonts
+        0.3 social colors
+        0.4 tech colors 
+
+//////////////////// */
+
+/* ====================
+	0. variables
+   ====================*/
+
+    /* -------------------- 0.1 colors -------------------- */
+
+        :root {
+            --js-main: ;
+            --js-main-offset: ;
+            --js-font: ;
+            --js-font-contrast: ;
+        } // these are dynamically accessible 
+
+        $color-background: var(--js-main);
+        $color-background-contrast: var(--js-main-offset);
+
+        $text-main: var(--js-font);                         // light to dark text
+        $text-main-contrast: var(--js-font-contrast);       // dark to light text
+
+        $color-primary: #20BF55;                          // MALACHITE
+        $color-primary-hover: #2CEAA3;                    // EUCALYPTUS
+        $color-secondary: #3EFF8B;                        // VERY LIGHT MALACHITE GREEN
+
+        $color-background-dark: #333333;
+
+    /* -------------------- ---------- -------------------- */
+
+    /* -------------------- 0.2 fonts -------------------- */
+
+        @font-face {
+            font-family: 'Fira code';
+            src: url(../vendors/fonts/Fira-code/firacode-variablefont_wght-webfont.woff2)format('woff2');
+        }
+    
+        $font-primary: 'Fira code', sans-serif;
+        $font-secondary: sans-serif;
+
+    /* -------------------- --------- -------------------- */
+
+    /* -------------------- 0.3 social colors -------------------- */
+
+        $color-brand-twitter: #1DA1F2;
+        $color-brand-discord: #7289DA;
+        $color-brand-twitch: #6441A4;
+        $color-brand-instagram: #CD3081;
+        $color-brand-reddit: #FF4500;
+        $color-brand-linkedin: #0271AE;
+        $color-brand-github: #24292E;
+        $color-brand-facebook: #1774EB;
+        $color-brand-spotify: #1AD15C;
+        $color-brand-stackoverflow: #EC771F;
+        $color-brand-youtube: #F80000;
+        $color-brand-mixer: #001F4E;
+        $color-brand-steam: #0C1C49;
+        $color-brand-deviantart: #05C645;
+        $color-brand-curious-cat: #CC871E;
+
+    /* -------------------- ----------------- -------------------- */
+
+
+    /* -------------------- 0.4 tech colors -------------------- */
+
+        $color-tech-sass: #CF649A;
+        $color-tech-html: #E34F26;
+        $color-tech-js: #FFDA07;
+        $color-tech-gitKraken: #179287;
+
+        $gradient-main: linear-gradient(
+            45deg,
+            #fff,
+            #fff,
+            #ff6f91,
+            #EA9999,
+            #ff9671,
+            #ffc75f,
+            #f9f871
+        );
+
+    /* -------------------- --------------- -------------------- */
+
+/* if you can't see these, they are compiled away by scss */

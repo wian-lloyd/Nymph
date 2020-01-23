@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "outDir": "src/build",
+        "target": "ESNext",
+        "watch": true,
+        "lib": ["dom", "es2017"]
+    },
+}

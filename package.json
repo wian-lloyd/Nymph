@@ -1,0 +1,31 @@
+{
+  "name": "nymph",
+  "version": "1.0.0",
+  "description": "A lightweight web template. Using Typescript, Sass, Webpack and Babel.",
+  "main": "index.ts",
+  "scripts": {
+    "tsc": "tsc --watch ./src/scripts/index.ts --outDir src/build",
+    "webpack": "webpack --mode development --watch",
+    "sass": "sass --style compressed --watch src/theme:public/stylesheets",
+    "build": "webpack --mode production",
+    "start": "concurrently --kill-others \"npm run webpack\" \"npm run sass\" \"live-server ./public\""
+  },
+  "author": "Wian Lloyd - wian.dev.inquire@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "concurrently": "^5.0.2",
+    "eslint": "^6.8.0",
+    "live-server": "^1.2.1",
+    "sass": "^1.25.0",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
